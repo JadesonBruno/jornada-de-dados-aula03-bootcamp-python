@@ -3,6 +3,17 @@
 # que todos os registros tenham valores positivos para `quantidade` e `preço`. 
 # Escreva um programa que verifique esses campos e imprima "Dados válidos" se ambos 
 # forem positivos ou "Dados inválidos" caso contrário.
+try:
+    quantity = int(input("Enter quantity: "))
+    price = float(input("Enter price: "))
+
+    if quantity > 0 and price > 0:
+        print("Valid data")
+    else:
+        print("Error: Invalid data")
+
+except ValueError as e:
+    print(f"Error, invalid input: {e}")
 
 ### Exercício 2: Classificação de Dados de Sensor
 # Imagine que você está trabalhando com dados de sensores IoT. 
