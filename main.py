@@ -11,6 +11,7 @@ print("Esse é o terceiro comando")
 
 print(x) """
 
+# IF
 # Provavelmente o mais conhecido comando de controle de fluxo é o if. Por exemplo:
 """ x = int(input("Please enter an integer: "))
 
@@ -71,12 +72,19 @@ list(range(-10, -100, -30))
 for i in range(len(a)):
     print(i, a[i]) """
 
-estado = dict()
-brasil = list()
+# WHILE
 
-for i in range(3):
-    estado["uf"] = input("Digite o nome do estado: ")
-    estado["sigla"] = input("Digite a sigla do estado: ")
-    brasil.append(estado.copy())
+# Example for the While loop structure
+""" import time
 
-print(brasil)
+try:
+    while True:
+        print("Verificando novos dados...")
+        # Aqui você pode adicionar o código para verificar novos dados,
+        # por exemplo, checar a existência de novos arquivos em um diretório,
+        # fazer uma consulta a um banco de dados ou API, etc.
+        
+        time.sleep(5)  # Pausa o loop por 10 segundos
+
+except KeyboardInterrupt:
+    print("Error: User interrupted the program.") """
