@@ -152,6 +152,24 @@ print(even_numbers) """
 
 ### Exercício 10. Agregação de Dados por Categoria
 # Objetivo:** Dado um conjunto de registros de vendas, calcular o total de vendas por categoria.
+""" vendas = [
+    {"categoria": "eletrônicos", "valor": 1200},
+    {"categoria": "livros", "valor": 200},
+    {"categoria": "eletrônicos", "valor": 800}
+]
+
+sales_category = dict()
+
+for venda in vendas:
+    category = venda["categoria"]
+    value = venda["valor"]
+
+    if venda["categoria"] in sales_category:
+        sales_category[category] += value
+    else:
+        sales_category[category] = value
+
+print(sales_category) """
 
 ### Exercícios com WHILE
 
