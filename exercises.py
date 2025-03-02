@@ -52,6 +52,21 @@ except KeyboardInterrupt as e:
 # você precisa garantir que cada usuário tenha idade entre 18 e 65 anos e tenha 
 # fornecido um email válido. Escreva um programa que valide essas condições 
 # e imprima "Dados de usuário válidos" ou o erro específico encontrado.
+""" try:
+    age = int(input("Enter your age: "))
+    email = input("Enter your email: ")
+
+    if not 18 <= age <= 65:
+        raise ValueError ("Age not allowed!")
+    elif "@" not in email or "." not in email:
+        raise ValueError ("Invalid email.")
+    else:
+        print("Valid user!")
+    
+except ValueError as e:
+    print(f"Error: {e}")
+except KeyboardInterrupt:
+    print("\nProcess interrupted by user.") """
 
 ### Exercício 5: Detecção de Anomalias em Dados de Transações
 # Você está trabalhando em um sistema de detecção de fraude e precisa identificar 
