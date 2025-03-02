@@ -144,6 +144,11 @@ print(invalid_users) """
 
 ### Exercício 9. Extração de Subconjuntos de Dados
 # Objetivo:** Dada uma lista de números, extrair apenas aqueles que são pares.
+""" numbers = range(0, 100)
+
+even_numbers = [number for number in numbers if number % 2 == 0]
+
+print(even_numbers) """
 
 ### Exercício 10. Agregação de Dados por Categoria
 # Objetivo:** Dado um conjunto de registros de vendas, calcular o total de vendas por categoria.
