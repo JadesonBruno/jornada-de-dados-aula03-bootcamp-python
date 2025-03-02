@@ -79,12 +79,40 @@ if transacao["valor"] > 10000:
     raise ("Error: Value is abouve allowed.")
 elif not 9 <= transacao["hora"] <= 18:
     raise ("Error: operation outside permitted time.") """
-    
+
 ### Exercício 6. Contagem de Palavras em Textos
 # Objetivo:** Dado um texto, contar quantas vezes cada palavra única aparece nele.
+""" phrase = input("Enter a phrase: ")
+
+words = phrase.split()
+count_words = dict()
+
+for word in words:
+    if word in count_words.keys(): # or "if word in count_words"
+        count_words[word] += 1
+    else:
+        count_words[word] = 1
+
+print(count_words) """
 
 ### Exercício 7. Normalização de Dados
 # Objetivo:** Normalizar uma lista de números para que fiquem na escala de 0 a 1.
+""" try:
+    numbers = input("Enter the numbers to be normalized separated for space: ")
+
+    numbers_list = list(map(float, numbers.split()))
+
+    min_numbers = min(numbers_list)
+    max_numbers = max(numbers_list)
+
+    normalized = [(x - min_numbers) / (max_numbers - min_numbers) for x in numbers_list]
+
+    print(normalized)
+
+except ValueError as e:
+    print(f"Error: {e}")
+except KeyboardInterrupt:
+    print(f"\nError: User interrupt the program.") """
 
 ### Exercício 8. Filtragem de Dados Faltantes
 # Objetivo:** Dada uma lista de dicionários representando dados de usuários, filtrar aqueles que têm um campo específico faltando
