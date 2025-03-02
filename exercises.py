@@ -115,7 +115,32 @@ except KeyboardInterrupt:
     print(f"\nError: User interrupt the program.") """
 
 ### Exercício 8. Filtragem de Dados Faltantes
-# Objetivo:** Dada uma lista de dicionários representando dados de usuários, filtrar aqueles que têm um campo específico faltando
+# Objetivo:** Dada uma lista de dicionários representando dados de usuários, filtrar aqueles que têm um campo específico faltando.
+# With list comprehension
+""" users = [
+    {"name": "Alice", "email": "alice@example.com"},
+    {"name": "Bob", "email": ""},
+    {"name": "Carol", "email": "carol@example.com"}
+]
+
+invalid_users = [user for user in users if not user["email"]]
+
+print(invalid_users) """
+
+# without list comprehension
+""" users = [
+    {"name": "Alice", "email": "alice@example.com"},
+    {"name": "Bob", "email": ""},
+    {"name": "Carol", "email": "carol@example.com"}
+]
+
+invalid_users = list()
+
+for user in users:
+    if not user["email"]:
+        invalid_users.append(user)
+
+print(invalid_users) """
 
 ### Exercício 9. Extração de Subconjuntos de Dados
 # Objetivo:** Dada uma lista de números, extrair apenas aqueles que são pares.
