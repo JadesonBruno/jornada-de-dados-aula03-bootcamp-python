@@ -195,6 +195,18 @@ print(sales_category) """
 
 ### Exercício 13. Consumo de API Simulado
 # Simular o consumo de uma API paginada, onde cada "página" de dados é processada em loop até que não haja mais páginas.
+""" import time
+
+current_page = 1
+total_pages = 5  # Simulação, na prática, isso viria da API
+
+while current_page <= total_pages:
+    print(f"Processing {current_page}th page of {total_pages}.")
+    current_page += 1
+
+    time.sleep(2)
+
+print("Finally processing.") """
 
 ### Exercício 14. Tentativas de Conexão
 # Simular tentativas de reconexão a um serviço com um limite máximo de tentativas.
