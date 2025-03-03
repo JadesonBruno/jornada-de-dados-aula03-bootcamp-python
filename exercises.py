@@ -184,6 +184,14 @@ print(sales_category) """
 
 ### Exercício 12. Validação de Entrada
 # Solicitar ao usuário um número dentro de um intervalo específico até que a entrada seja válida.
+""" while True:
+    input_number = float(input("Enter a number: "))
+    
+    if not (1 <= input_number <= 10):
+        print (f"Error: Entry out of range")
+    else:
+        print("Entry is valid.")
+        break """
 
 ### Exercício 13. Consumo de API Simulado
 # Simular o consumo de uma API paginada, onde cada "página" de dados é processada em loop até que não haja mais páginas.
