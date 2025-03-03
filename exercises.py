@@ -210,7 +210,7 @@ print("Finally processing.") """
 
 ### Exercício 14. Tentativas de Conexão
 # Simular tentativas de reconexão a um serviço com um limite máximo de tentativas.
-import time
+""" import time
 
 maximum_attempts = 5
 attempt = 1
@@ -221,7 +221,19 @@ while attempt <= maximum_attempts:
 
     time.sleep(2)
 
-print("Attempts exhausted.")
+print("Attempts exhausted.") """
 
 ### Exercício 15. Processamento de Dados com Condição de Parada
 # Processar itens de uma lista até encontrar um valor específico que indica a parada.
+""" import time
+
+items = [1, 2, 3, "break", 4, 5]
+
+for item in items:
+    print(item)
+
+    if item == "break":
+        print("Halt condition encountered. Halting the system.")
+        break
+
+    time.sleep(2) """
