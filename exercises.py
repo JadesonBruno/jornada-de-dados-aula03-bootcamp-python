@@ -175,6 +175,12 @@ print(sales_category) """
 
 ### Exercício 11. Leitura de Dados até Flag
 # Ler dados de entrada até que uma palavra-chave específica ("sair") seja fornecida.
+""" while True:
+    key_word = input("Enter a key_word: ").lower()
+    print(key_word)
+
+    if key_word == "exit":
+        break """
 
 ### Exercício 12. Validação de Entrada
 # Solicitar ao usuário um número dentro de um intervalo específico até que a entrada seja válida.
